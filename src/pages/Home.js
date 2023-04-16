@@ -2,9 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import organicFarming from "../images/organicFarming.jpg";
 import riceplant from "../images/riceplant.jpg";
+import rice1 from "../images/rice2.jpg";
+import rice2 from "../images/rice1.jpg";
 import cotonplant from "../images/cotonplant.jpg";
+import coton1 from "../images/coton1.jpg";
+import coton2 from "../images/coton2.jpg";
 import potato from "../images/potato.jpg";
+import potato1 from "../images/potato2.jpg";
+import potato2 from "../images/Potato1.jpg";
+
 import tomato from "../images/tomato.jpg";
+import tomato1 from "../images/tomatoProduct.jpg";
+import tomato2 from "../images/tomatoProduct2.jpg";
 import Container from "../components/Container";
 import ProductCard from "../components/ProductCard";
 
@@ -101,10 +110,9 @@ const Home = () => {
           <div className="col-12">
             <h3 className="section-heading">Featured Collection</h3>
           </div>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard src1={tomato1} src2={tomato2} src3={potato1} src4={potato2} name1="TOMATO" name2="POTATO"/>
+          <ProductCard src1={coton1} src2={coton2} src3={rice1} src4={rice2} name1="COTON" name2="RICE"/>
+          
         </div>
       </Container>
  
