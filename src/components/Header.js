@@ -5,7 +5,8 @@ import compare from "../images/compare.svg";
 import wishlist from "../images/wishlist.svg";
 import user from "../images/user.svg";
 import cart from "../images/cart.svg";
-
+import market from "../images/market-removebg-preview.png"
+import blog from "../images/blog.png"
 
 const Header = () => {
   return (
@@ -15,7 +16,9 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">FarmiGo</Link>
+                <Link to="/" className="text-white">
+                  FarmiGo
+                </Link>
               </h2>
             </div>
             <div className="col-5">
@@ -41,8 +44,27 @@ const Header = () => {
                   >
                     <img src={compare} alt="compare" />
                     <p className="mb-0">
-                       Sell <br/>Products
+                      Sell <br />
+                      Products
                     </p>
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    to="/blogs"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
+                    <img src={blog} width = '40' alt="blog" />
+                    <p className="mb-0">Blogs</p>
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    to="/product"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
+                    <img src={market} width = '40' alt="market" />
+                    <p className="mb-0">Market</p>
                   </Link>
                 </div>
                 <div>
@@ -51,9 +73,7 @@ const Header = () => {
                     className="d-flex align-items-center gap-10 text-white"
                   >
                     <img src={wishlist} alt="wishlist" />
-                    <p className="mb-0">
-                      Favourite 
-                    </p>
+                    {/* <p className="mb-0">Favourite</p> */}
                   </Link>
                 </div>
                 <div>
@@ -62,9 +82,10 @@ const Header = () => {
                     className="d-flex align-items-center gap-10 text-white"
                   >
                     <img src={user} alt="user" />
-                    <p className="mb-0">
-                      Log in <br /> My Account
-                    </p>
+                    {/* <p className="mb-0">
+                      Log in <br /> 
+                     
+                    </p> */}
                   </Link>
                 </div>
                 <div>
@@ -74,8 +95,8 @@ const Header = () => {
                   >
                     <img src={cart} alt="cart" />
                     <div className="d-flex flex-column gap-10">
-                      <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">10000INR</p>
+                      <span className="badge text-dark"></span>
+                      {/* <p className="mb-0">10000INR</p> */}
                     </div>
                   </Link>
                 </div>
@@ -84,26 +105,24 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <header className="header-bottom py-3 d-flex align-items-center">
+      {/* <header className="header-bottom py-2 d-flex align-items-center">
         <div className="container-xxl">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="text-center">
-             <div className="sticky-top">
-             <div className="menu-links ">
-                  <div className="d-flex align-items-center gap-15">
+              <div className="sticky-top">
+                <div className="menu-links ">
+                  <div className="d-flex align-items-center gap-15 justify-content-center">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/product">Market</NavLink>
                     <NavLink to="/blogs">Blogs</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
                   </div>
                 </div>
-             </div>
-               
-             
+              </div>
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
     </>
   );
 };

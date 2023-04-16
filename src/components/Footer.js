@@ -5,7 +5,7 @@ import newsletter from "../images/newsletter.png";
 const Footer = () => {
   return (
     <>
-      <footer className="py-4">
+      {/* <footer className="py-4">
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-5">
@@ -30,43 +30,29 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer>
-      <footer className="py-4">
+      </footer> */}
+      <footer className="py-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-4">
               <h4 className="text-white mb-4">Contact Us</h4>
               <div>
                 <address className="text-white fs-6">
-                  Hno : 1234 , <br /> Ponda,Goa <br />
+                  Ponda, Goa <br />
                   PinCode: 403401
                 </address>
                 <a
                   href="tel:+91 8264954234"
                   className="mt-3 d-block mb-1 text-white"
                 >
-                  +91 9765876***
+                  +91 9876543210
                 </a>
                 <a
                   href="mailto:navdeepdahiya753@gmail.com"
                   className="mt-2 d-block mb-0 text-white"
                 >
-                  FarmiGo@gmail.com
+                  support@farmiGo.ac.in
                 </a>
-                <div className="social_icons d-flex align-items-center gap-30 mt-4">
-                  <a className="text-white" href="#">
-                    <BsLinkedin className="fs-4" />
-                  </a>
-                  <a className="text-white" href="#">
-                    <BsInstagram className="fs-4" />
-                  </a>
-                  <a className="text-white" href="#">
-                    <BsGithub className="fs-4" />
-                  </a>
-                  <a className="text-white" href="#">
-                    <BsYoutube className="fs-4" />
-                  </a>
-                </div>
               </div>
             </div>
             <div className="col-3">
@@ -75,8 +61,7 @@ const Footer = () => {
                 <Link to="/privacy-policy" className="text-white py-2 mb-1">
                   Privacy Policy
                 </Link>
-                
-                
+
                 <Link to="/term-conditions" className="text-white py-2 mb-1">
                   Terms & Conditions
                 </Link>
@@ -97,18 +82,35 @@ const Footer = () => {
                 <Link className="text-white py-2 mb-1">Our Work</Link>
                 <Link className="text-white py-2 mb-1">Our Growth</Link>
                 <Link className="text-white py-2 mb-1">Sponsors</Link>
-               
               </div>
             </div>
           </div>
         </div>
       </footer>
-      <footer className="py-4">
+      <footer className="py-2">
         <div className="container-xxl">
           <div className="row">
+            
             <div className="col-12">
+            <div className="social_icons d-flex align-items-center gap-30 mt-2 justify-content-center my-2">
+              <a className="text-white" href="#">
+                <BsLinkedin className="fs-4" />
+              </a>
+              <a className="text-white" href="#">
+                <BsInstagram className="fs-4" />
+              </a>
+              <a className="text-white" href="#">
+                <BsGithub className="fs-4" />
+              </a>
+              <a className="text-white" href="#">
+                <BsYoutube className="fs-4" />
+              </a>
+            </div>
               <p className="text-center mb-0 text-white">
-                &copy; {new Date().getFullYear()}; GFGHACKHATON
+                Made with Dedication
+              </p>
+              <p className="text-center mb-0 text-white">
+                &copy; {new Date().getFullYear() + 1}
               </p>
             </div>
           </div>
