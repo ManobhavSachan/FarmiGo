@@ -37,19 +37,6 @@ const SellProduct = (props) => {
     let tags1;
     if (tags.length)
       tags1 = tags.split(',').map((tag) => tag.trim().toLowerCase());
-    // await postProduct({
-    //   name,
-    //   model,
-    //   dateOfPurchase,
-    //   amount,
-    //   issueDate,
-    //   returnDate,
-    //   isOnRent,
-    //   images,
-    //   tags: tags1,
-    //   description,
-    // });
-
     navigate('/product');
   };
   return (
