@@ -6,11 +6,20 @@ import grd2 from "../images/gr2.svg"
 import grd3 from "../images/gr3.svg"
 import grd4 from "../images/gr4.svg"
 import ProductCard from "../components/ProductCard";
-
+import rice1 from "../images/rice2.jpg";
+import rice2 from "../images/rice1.jpg";
+import tomato1 from "../images/tomatoProduct.jpg";
+import tomato2 from "../images/tomatoProduct2.jpg";
+import potato1 from "../images/potato2.jpg";
+import potato2 from "../images/Potato1.jpg";
+import coton1 from "../images/coton1.jpg";
+import coton2 from "../images/coton2.jpg";
 import Container from "../components/Container";
 
-const OurStore = () => {
+const OurStore = (props) => {
   const [grid, setGrid] = useState(4);
+  const { src1 } = props;
+  const { src2 } = props;
   return (
     <>
       <Meta title={"Our Store"} />
@@ -152,7 +161,7 @@ const OurStore = () => {
                   </select>
                 </div>
                 <div className="d-flex align-items-center gap-10">
-                  <p className="totalproducts mb-0">21 Products</p>
+                  <p className="totalproducts mb-0">4 Products</p>
                   <div className="d-flex gap-10 align-items-center grid">
                     <img
                       onClick={() => {
@@ -193,8 +202,12 @@ const OurStore = () => {
             </div>
             <div className="products-list pb-5">
               <div className="d-flex gap-10 flex-wrap">
-                <ProductCard grid={grid} />
+                <ProductCard grid={grid} src1={tomato1} src2={tomato2} src3={potato1} src4={potato2} name1="TOMATO" name2="POTATO" />
+                <ProductCard grid={grid} src1={coton1} src2={coton2} src3={rice1} src4={rice2}  name1="COTON" name2="RICE"/>
+                
+               
               </div>
+              
             </div>
           </div>
         </div>
