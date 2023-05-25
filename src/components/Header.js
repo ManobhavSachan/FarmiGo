@@ -6,7 +6,8 @@ import wishlist from "../images/wishlist.svg";
 import user from "../images/user.svg";
 import cart from "../images/cart.svg";
 import market from "../images/market-removebg-preview.png"
-import blog from "../images/blog.png"
+import blog from "../images/Blog.svg"
+import expert from "../images/Expert.svg";
 
 const Header = () => {
   return (
@@ -21,7 +22,7 @@ const Header = () => {
                 </Link>
               </h2>
             </div>
-            <div className="col-5">
+            <div className="col-4">
               <div className="input-group">
                 <input
                   type="text"
@@ -35,7 +36,7 @@ const Header = () => {
                 </span>
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-6">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
                   <Link
@@ -65,6 +66,15 @@ const Header = () => {
                   >
                     <img src={market} width = '40' alt="market" />
                     <p className="mb-0">Market</p>
+                  </Link>
+                </div>
+                <div>
+                <Link
+                    to="/Expert"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
+                    <img src={expert} width="35" alt="blog" />
+                    <p className="mb-0">Expert</p>
                   </Link>
                 </div>
                 <div>
