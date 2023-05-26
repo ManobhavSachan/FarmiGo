@@ -11,15 +11,30 @@ import potato from "../images/potato.jpg";
 import potato1 from "../images/potato2.jpg";
 import potato2 from "../images/Potato1.jpg";
 
+import apple1 from "../images/apple1.jpg";
+import apple2 from "../images/apple2.jpg";
+
+import banana1 from "../images/banana1.jpg";
+import banana2 from "../images/banana2.jpg";
+
+import carrot1 from "../images/carrot1.jpg";
+import carrot2 from "../images/carrot2.jpg";
+
+import mango1 from "../images/mango.jpg";
+import mango2 from "../images/mango2.jpg";
+
+
+
 import tomato from "../images/tomato.jpg";
 import tomato1 from "../images/tomatoProduct.jpg";
 import tomato2 from "../images/tomatoProduct2.jpg";
 import Container from "../components/Container";
 import ProductCard from "../components/ProductCard";
-
+import Translate from "../components/Translate";
 const Home = () => {
   return (
     <>
+      <Translate/>
       <Container class1="home-wrapper-1 py-5 ">
         <div className="row">
           <div className="col-6">
@@ -112,6 +127,8 @@ const Home = () => {
           </div>
           <ProductCard src1={tomato1} src2={tomato2} src3={potato1} src4={potato2} name1="TOMATO" name2="POTATO"/>
           <ProductCard src1={coton1} src2={coton2} src3={rice1} src4={rice2} name1="COTON" name2="RICE"/>
+          <ProductCard src1={apple1} src2={apple2} src3={banana1} src4={banana2} name1="COTON" name2="RICE"/>
+          <ProductCard src1={carrot1} src2={carrot2} src3={mango1} src4={mango2} name1="COTON" name2="RICE"/>
           
         </div>
       </Container>

@@ -2,6 +2,9 @@ import React from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import BlogCard from "../components/BlogCard";
+import BlogCard1 from "../components/BlogCard1";
+import BlogCard2 from "../components/BlogCard2";
+import BlogCard3 from "../components/BlogCard3";
 import Container from "../components/Container";
 
 const Blog = () => {
@@ -29,13 +32,13 @@ const Blog = () => {
                 <BlogCard />
               </div>
               <div className="col-6 mb-3">
-                <BlogCard />
+                <BlogCard1 />
               </div>
               <div className="col-6 mb-3">
-                <BlogCard />
+                <BlogCard2 />
               </div>
               <div className="col-6 mb-3">
-                <BlogCard />
+                <BlogCard3 />
               </div>
             </div>
           </div>
