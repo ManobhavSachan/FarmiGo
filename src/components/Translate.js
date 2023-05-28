@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-const apiKey = process.env.REACT_APP_API_KEY;
+
 
 
 const Translate = () => {
@@ -24,6 +24,7 @@ const Translate = () => {
   }, []);
 
   return (
+    
     <div>
       <div id="google_translate_element"></div>
       <div className="gx-d-flex justify-content-right">
