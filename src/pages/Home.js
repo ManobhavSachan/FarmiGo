@@ -126,9 +126,9 @@ const Home = () => {
             <h3 className="section-heading">Featured Collection</h3>
           </div>
           <ProductCard src1={tomato1} src2={tomato2} src3={potato1} src4={potato2} name1="TOMATO" name2="POTATO"/>
-          <ProductCard src1={coton1} src2={coton2} src3={rice1} src4={rice2} name1="COTON" name2="RICE"/>
-          <ProductCard src1={apple1} src2={apple2} src3={banana1} src4={banana2} name1="COTON" name2="RICE"/>
-          <ProductCard src1={carrot1} src2={carrot2} src3={mango1} src4={mango2} name1="COTON" name2="RICE"/>
+          <ProductCard src1={coton1} src2={coton2} src3={rice1} src4={rice2} name1="COTTON" name2="RICE"/>
+          <ProductCard src1={apple1} src2={apple2} src3={banana1} src4={banana2} name1="APPLE" name2="BANANA"/>
+          <ProductCard src1={carrot1} src2={carrot2} src3={mango1} src4={mango2} name1="CARROT" name2="MANGO"/>
           
         </div>
       </Container>

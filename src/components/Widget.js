@@ -5,9 +5,9 @@ import { useState } from 'react'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = "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";
+const API_KEY = "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";
 
-const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
+const systemMessage = { 
   "role": "system", "content": "Explain things like you're talking to a Farmer "
 }
 
@@ -32,16 +32,12 @@ function Widget() {
     
     setMessages(newMessages);
 
-    // Initial system message to determine ChatGPT functionality
-    // How it responds, how it talks, etc.
+   
     setIsTyping(true);
     await processMessageToChatGPT(newMessages);
   };
 
-  async function processMessageToChatGPT(chatMessages) { // messages is an array of messages
-    // Format messages for chatGPT API
-    // API is expecting objects in format of { role: "user" or "assistant", "content": "message here"}
-    // So we need to reformat
+  async function processMessageToChatGPT(chatMessages) { 
 
     let apiMessages = chatMessages.map((messageObject) => {
       let role = "";
@@ -88,7 +84,7 @@ function Widget() {
           <ChatContainer>       
             <MessageList 
               scrollBehavior="smooth" 
-              typingIndicator={isTyping ? <TypingIndicator content="FarmAi is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="FarmAI is typing" /> : null}
               
             >
               {messages.map((message, i) => {

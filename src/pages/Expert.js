@@ -7,7 +7,7 @@ import Widget from '../components/Widget';
 import plus from '../images/plus.svg';
 
 import Container from '../components/Container';
-import { colors } from '@mui/material';
+
 
 const Data = [
   {
@@ -45,7 +45,7 @@ const Data = [
 ];
 
 const Accordian = ({ Data }) => {
-  const [itemIndex, setItemIndex] = useState(0);
+ 
   const [showIndexes, setShowIndexes] = useState([]);
 
   return (
@@ -93,13 +93,7 @@ const Accordian = ({ Data }) => {
 };
 
 const Expert = (props) => {
-  const [questions, setQuestions] = useState([]);
-
-  const [grid, setGrid] = useState(4);
-  const [chatId, setChatId] = useState('');
-  const [introSent, setIntroSent] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-
+  
 
   return (
     <>
@@ -112,8 +106,8 @@ const Expert = (props) => {
         <div className="row">
           <div className="col-4 ">
           <div className="filter-sort-grid mb-4">
-          <div className="d-flex align-items-center gap-10">
-           <h1 className="mb-0 d-block text-center" style={{ width: '100px' ,color: '#3aa0f2' }} >
+          <div className=" flex-item-centre gap-10">
+           <h1 className="mb-0 d-block text-center " style={{ width: '25rem' ,color: '#3aa0f2' }} >
             FarmAI
            </h1>
           </div>
@@ -151,7 +145,7 @@ const Expert = (props) => {
                       aria-expanded="false"
                       
                     >
-                      <img src={plus} />
+                      <img src={plus} alt="plus" />
                     </button>
                     
                   </div>
